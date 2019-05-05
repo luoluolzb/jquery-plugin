@@ -1,0 +1,45 @@
+
+.lqImgCarousel{
+	position: relative;
+}
+
+.lqImgCarousel img{
+	width: 100%;
+}
+
+.lqImgCarousel .image-wapper{
+	display: none;
+}
+
+.lqImgCarousel .image-wapper.active{
+	display: block;
+}
+
+.lqImgCarousel .carousel-nav{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+.lqImgCarousel .image-nav{
+	display: inline-block;
+	background: rgba(128, 128, 128, 0.5);
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	margin-right: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+
+.lqImgCarousel .image-nav.active{
+	background: rgba(255, 255, 255, 0.5);
+	color: #000;
+}
+
+.lqImgCarousel .image-nav:hover{
+	background: rgba(255, 255, 255, 0.5);
+	color: #000;
+}

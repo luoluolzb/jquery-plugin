@@ -1,0 +1,23 @@
+
+.img-slider-outwapper{
+	overflow: hidden;
+	border: 1px dashed #CCC;
+}
+
+.img-slider-inwapper{
+	float: left;
+	width: 800%;
+}
+
+.img-slider{
+	float： left;
+}
+
+.img-slider div{
+	float： left;
+}
+
+.img-slider-img{
+	display: inline-block;
+	margin: 0 5px;
+}

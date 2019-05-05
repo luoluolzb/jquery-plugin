@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Upload Image Demo - lqUploader</title>
+	<link rel="stylesheet" type="text/css" href="../jquery.lqUploader.min.css">
+	<link href="https://cdn.bootcss.com/font-awesome/5.8.0/css/fontawesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<main>
+		<div id="lqUploader" class="lqUploader">
+			<button class="lqUploader-button">添加附件</button>
+			<input class="lqUploader-input" type="file"/>
+			<div class="lqUploader-filelist">
+			</div>
+		</div>
+	</main>
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="../jquery.lqUploader.min.js"></script>
+	<script>
+	$(function(){
+		$('#lqUploader').lqUploader({
+			//文件后缀允许列表, 默认为空不限制
+			'typeList': ['png', 'gif', 'jpeg', 'jpg'],
+
+			//文件限制大小, 默认0不限制
+			'maxFileSize': 1 * 1024 * 1024,
+		});
+	});
+	</script>
+</body>
+</html>
